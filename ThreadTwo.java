@@ -1,14 +1,16 @@
 
 public class ThreadTwo extends Thread{
-	Circle c1;
-	public ThreadTwo(Circle  c1)
+
+	Pattern p1;
+	ThreadTwo(Pattern p1)
 	{
-		this.c1=c1;
+		this.p1=p1;
 	}
-	
 	public void run()
 	{
-		c1.displayArea();
+		p1.print('#');
+		p1.display();
 	}
-
 }
+
+

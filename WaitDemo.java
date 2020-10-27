@@ -2,14 +2,12 @@
 public class WaitDemo {
 
 	public static void main(String[] args) {
-	Circle c1=new Circle();
-	ThreadOne t1=new ThreadOne(c1);
-	ThreadTwo t2=new ThreadTwo(c1);
-	ThreadThree t3=new ThreadThree(c1);
-		
-		t1.start();
+		Circle c1=new Circle();
+		Thread_1 t1=new Thread_1(c1);
+	    Thread_2 t2=new Thread_2(c1);
 		t2.start();
-		t3.start();
+		t1.start();
+		
 	}
 
 }
