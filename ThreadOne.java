@@ -1,14 +1,12 @@
 
 public class ThreadOne extends Thread{
-Pattern p1;
-	ThreadOne(Pattern p1)
+PatternNew p;
+	ThreadOne(PatternNew p)
 	{
-		this.p1=p1;
+		this.p=p;
 	}
-	
 	public void run()
 	{
-		p1.print('*');
-		p1.display();
+		p.print('*');
 	}
 }
